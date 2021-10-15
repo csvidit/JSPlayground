@@ -1,20 +1,30 @@
 function charCount()
 {
 	var str = prompt("Enter the string.");
-	alert("This string has "+str.length+" characters");
+	if(str != null)
+	{
+		alert("This string has "+str.length+" characters");
+	}
+	
 }
 
 function changeCase()
 {
 	var str = prompt("Enter your name");
-	alert("Hello, "+str.slice(0,1).toUpperCase()+str.slice(1,str.length).toLowerCase());
+	if(str !=null)
+	{
+		alert("Hello, "+str.slice(0,1).toUpperCase()+str.slice(1,str.length).toLowerCase());
+	}
 }
 
 function dogAgeToHumanAge()
 {
 	var dogAge = prompt("Enter dog age.");
-	var humanAge = ((dogAge-2)*4)+21;
-	alert("The equivalent human age for dog age "+dogAge+" is "+humanAge);
+	if(dogAge != null)
+	{
+		var humanAge = ((dogAge-2)*4)+21;
+		alert("The equivalent human age for dog age "+dogAge+" is "+humanAge);
+	}
 }
 
 function ageLeft(age)
@@ -30,7 +40,10 @@ function bmiCalculator()
 {
 	var weight = prompt("Enter your weight");
 	var height = prompt("Enter your height");
-	alert("Your BMI is "+bmi(weight, height));
+	if(weight !=null && height !=null)
+	{
+		alert("Your BMI is "+bmi(weight, height));
+	}
 }
 
 function bmi(weight, height)
@@ -42,33 +55,39 @@ function loveCalculator()
 {
 	var yourName = prompt("Enter your name");
 	var crushName = prompt("Enter the name of your crush");
-	alert("The chances of a relationship between you and "+crushName+" is "+Math.round(Math.random()*100+1)+" %");
+	if(yourName != null && crushName != null)
+	{
+		alert("The chances of a relationship between you and "+crushName+" is "+Math.round(Math.random()*100+1)+" %");
+	}
 }
 
 function isLeapYear()
 {
 	var year = prompt("Enter the year.");
-	if(year % 4 === 0)
+	if(year != null)
 	{
-		if(year % 100 === 0)
+		if(year % 4 === 0)
 		{
-			if(year % 400 === 0)
-			{
-				alert("Leap year.");
+			if(year % 100 === 0)
+			{	
+				if(year % 400 === 0)
+				{
+					alert("Leap year.");
+				}
+				else
+				{
+					alert("Not a leap year.");
+				}
 			}
 			else
 			{
-				alert("Not a leap year.");
+				alert("Leap year.");
 			}
 		}
 		else
 		{
-			alert("Leap year.");
+			alert("Not leap year.");
 		}
-	}
-	else
-	{
-		alert("Not leap year.");
 	}
 }
 
