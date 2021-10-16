@@ -1,7 +1,14 @@
+var siteStatus;
+
 function darkMode()
 {
 	var buttons = document.querySelectorAll("button");
-	if(document.getElementById("dark")!=null)
+	if(siteStatus === undefined)
+	{
+		siteStatus = "dark";
+		return;
+	}
+	else if(document.getElementById("dark")!=null)
 	{
 		document.getElementById("dark").id="light";
 		document.querySelector("body").classList.replace("bg-dark", "bg-light");
@@ -10,6 +17,7 @@ function darkMode()
 		{
 			buttons[i].classList.replace("btn-outline-light", "btn-outline-dark");
 		}
+		siteStatus="light";
 		document.getElementById("darkModeToggle").innerHTML="Revert to Dark Mode";
 	}
 	else
@@ -21,6 +29,7 @@ function darkMode()
 		{
 			buttons[i].classList.replace("btn-outline-dark", "btn-outline-light");
 		}
+		siteStatus="dark";
 		document.getElementById("darkModeToggle").innerHTML="Change to Light Mode";
 	}
 	
