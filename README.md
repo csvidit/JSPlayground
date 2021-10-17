@@ -1,5 +1,5 @@
 # JSPlayground
-A Bootstrap 5 website for running simple JS functions rather than running them/testing them on the console. 
+A Bootstrap 5 website for running simple JS functions rather than running them/testing them on the console. Currently trying to implement a site-wide Dark Mode.
 
 Hosted at [jsplayground.vidit.page](https://jsplayground.vidit.page)
 
