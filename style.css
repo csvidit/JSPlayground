@@ -17,9 +17,3 @@ body{
 .dice img {
   width: 80%;
 }
-
-.pressed{
-	color: red;
-	box-shadow: 2px;
-}
-
