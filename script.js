@@ -1,4 +1,4 @@
-$("#header-border").before("<h1 class='display-1'>JSPlayground</h1><p class='text-muted'>This is an experimental subdomain of Vidit Khandelwal. Website made using Bootstrap5.</p><a href='/index.html'><button class='btn btn-outline-light btn-sm' type='button'>Home</button></a><a href='/jq-index.html'><button class='btn btn-outline-light btn-sm' type='button'>JQueryPlayground</button></a>");
+$("#header-border").before("<h1 class='display-1'>JSPlayground</h1><p class='text-muted'>This is an experimental subdomain of Vidit Khandelwal. Website made using Bootstrap5.</p><a href='/index.html'><button class='btn btn-outline-light btn-sm' type='button'>Home</button></a><a href='/jq-index.html'>");
 
 $("#js-cb-disclaimer").html("");
 
@@ -278,31 +278,31 @@ function makeSound(key)
 	switch(key)
 		{
 			case "w":
-				var tom1 = new Audio("/sounds/tom-1.mp3");
+				var tom1 = new Audio("/drumkit-sounds/tom-1.mp3");
 				tom1.play();
 				break;
 			case "a":
-				var tom2 = new Audio("/sounds/tom-2.mp3");
+				var tom2 = new Audio("/drumkit-sounds/tom-2.mp3");
 				tom2.play();
 				break;
 			case "s":
-				var tom3 = new Audio("/sounds/tom-3.mp3");
+				var tom3 = new Audio("/drumkit-sounds/tom-3.mp3");
 				tom3.play();
 				break;
 			case "d":
-				var tom4 = new Audio("/sounds/tom-4.mp3");
+				var tom4 = new Audio("/drumkit-sounds/tom-4.mp3");
 				tom4.play();
 				break;
 			case "j":
-				var snare = new Audio("/sounds/snare.mp3");
+				var snare = new Audio("/drumkit-sounds/snare.mp3");
 				snare.play();
 				break;
 			case "k":
-				var crash = new Audio("/sounds/crash.mp3");
+				var crash = new Audio("/drumkit-sounds/crash.mp3");
 				crash.play();
 				break;
 			case "l":
-				var kickBass = new Audio("/sounds/kick-bass.mp3");
+				var kickBass = new Audio("/drumkit-sounds/kick-bass.mp3");
 				kickBass.play();
 				break;
 			default:
@@ -316,7 +316,7 @@ function buttonAnimation(currKey)
 	$(activeButton).addClass("btn-danger");
 	setTimeout( function() {
 
-		$(activeButton).addClass("btn-danger");
+		$(activeButton).removeClass("btn-danger");
 
 	}, 100);
 
