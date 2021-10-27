@@ -1,22 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width" initial-scale="1.0">
-    <title>JSPlayground - Vidit Khandelwal</title>
-		<meta name="author" content="Vidit Khandelwal">
-		<meta name="intro" content="Vidit Khandelwal's JavaScript Playground">
-		<meta name="keywords" content="Vidit, Khandelwal, DePauw, University, CS, CSE, CompSci, comp, sci, computer, science, web, dev, web, development, js, javascript">
-    <link href="style.css" rel="stylesheet" type="text/css" />
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js"></script>
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-
-		<script src="/script.js"></script>
-		<link href="V-Interlock-Gradient-Favicon.png" rel="icon">
+		<title>Dice Game - JSPlayground</title>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
   </head>
-  <body class = "text-center bg-dark text-white" id="dark" onload="darkMode()">
+  <body class = "text-center bg-dark text-white" id="dark" onload="initialCheck()">
 		<hr id = "header-border">
 		<p id="js-cb-disclaimer" class="text-muted">If you are using Safari, please turn off content blockers to see all content. You will also need to enable JavaScript on your browser if you usually keep it turned off.</p>
 		<div class="container">
@@ -35,7 +23,7 @@
       </div>
     </div>
 		<br><br><br>
-		<button class="btn btn-outline-light btn-sm" type="button" onclick="darkMode()" id="darkModeToggle">Change to Light Mode</button>
+		<button class="btn btn-outline-light btn-sm" type="button" onclick="darkMode('change')" id="darkModeToggle">Change to Light Mode</button>
 
 		<script src="/script.js"></script>
 		<script src="/darkmode.js"></script>
